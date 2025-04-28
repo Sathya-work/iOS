@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mallipudi_SearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AsY-kZ-lad">
+                                <rect key="frame" x="20" y="148" width="353" height="34.333333333333343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a keyword to search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-6x-prT">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmW-A6-tbO">
+                                        <rect key="frame" x="250" y="0.0" width="103" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3v-C1-aps"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yds-Xv-ISB">
+                                <rect key="frame" x="20" y="202.33333333333337" width="353" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eZt-El-Tbg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bHA-A3-POc">
+                                <rect key="frame" x="15" y="432.33333333333331" width="363" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82e-ad-KRC">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.left.fill" catalog="system" title="Prev" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="prevImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRE-f8-KaG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uE-XW-5aL">
+                                        <rect key="frame" x="124.33333333333334" y="0.0" width="114.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.trianglehead.2.clockwise.rotate.90.circle.fill" catalog="system" title="Reset" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOb-CI-dXu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gna-l9-9cA">
+                                        <rect key="frame" x="248.66666666666671" y="0.0" width="114.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.right.fill" catalog="system" title="Next" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGc-jp-aKP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dkt-a6-N4A">
+                                <rect key="frame" x="15" y="516.66666666666663" width="363" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aV0-IX-6NV"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yds-Xv-ISB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="28x-Tq-teQ"/>
+                            <constraint firstItem="AsY-kZ-lad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3Z2-dV-sLC"/>
+                            <constraint firstItem="AsY-kZ-lad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7lK-3N-fBM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yds-Xv-ISB" secondAttribute="trailing" constant="20" id="Jbt-VJ-osE"/>
+                            <constraint firstItem="bHA-A3-POc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bcd-gq-iPR"/>
+                            <constraint firstItem="bHA-A3-POc" firstAttribute="top" secondItem="Yds-Xv-ISB" secondAttribute="bottom" constant="30" id="csJ-da-jjA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkt-a6-N4A" secondAttribute="trailing" constant="15" id="eqK-f0-srG"/>
+                            <constraint firstItem="dkt-a6-N4A" firstAttribute="top" secondItem="bHA-A3-POc" secondAttribute="bottom" constant="50" id="fSH-gK-KLW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AsY-kZ-lad" secondAttribute="trailing" constant="20" id="gu2-VI-Qh3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bHA-A3-POc" secondAttribute="trailing" constant="15" id="qB2-P8-RKU"/>
+                            <constraint firstItem="dkt-a6-N4A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vog-do-giJ"/>
+                            <constraint firstItem="Yds-Xv-ISB" firstAttribute="top" secondItem="AsY-kZ-lad" secondAttribute="bottom" constant="20" id="zU6-pW-etZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextImageButton" destination="Gna-l9-9cA" id="cKE-Ew-DvV"/>
+                        <outlet property="prevImageButton" destination="82e-ad-KRC" id="gpU-Uy-uka"/>
+                        <outlet property="resetButton" destination="7uE-XW-5aL" id="bdo-Tj-3EV"/>
+                        <outlet property="resultImageView" destination="Yds-Xv-ISB" id="mkD-8n-Xzn"/>
+                        <outlet property="searchButton" destination="rmW-A6-tbO" id="ChZ-ze-xVE"/>
+                        <outlet property="searchTextField" destination="WGT-6x-prT" id="1tg-Il-N2h"/>
+                        <outlet property="topicDescriptionTextView" destination="dkt-a6-N4A" id="zkB-eL-HX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.trianglehead.2.clockwise.rotate.90.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="104"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
